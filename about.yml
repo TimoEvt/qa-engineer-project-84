@@ -1,0 +1,21 @@
+name: Tim Evteev
+job: QA Engineer
+level: junior
+email: t.evteev@school1387,ru
+description: "Junior QA Engineer"
+skills:
+  - Manual Testing
+  - Test Case Writing
+  - Bug Reporting
+  - Regression Testing
+  - Agile Methodologies
+experience:
+  - role: QA Student
+    company: Hexlet
+    duration: "9 months"
+    responsibilities:
+      - Assisted in manual testing and bug tracking
+      - Helped create and maintain test cases for new features
+languages:
+  - English (Fluent)
+  - Russian (Native)
