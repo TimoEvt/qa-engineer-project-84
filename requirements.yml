@@ -1,0 +1,42 @@
+requirements:
+  functional:
+    - "Пользователь должен иметь возможность искать товары по ключевому слову или категории."
+    - "Пользователь должен иметь возможность фильтровать товары."
+    - "Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре."
+    - "Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины."
+
+  non-functional:
+    - "Сайт нужно разработать с учетом удобства использования и оптимизировать для скорости работы."
+    - "Сайт должен быть безопасным и защищать данные пользователя."
+    - "Сайт должен иметь мобильную версию."
+    - "Сайт нужно протестировать на совместимость с последними версиями браузеров."
+    - "Важно, чтобы сайт мог обрабатывать большое количество трафика."
+    - "Сайт должен быть доступен на различных устройствах."
+
+  implicit:
+    - "Ссылки должны работать корректно."
+    - "Сайт должен быть доступен 24/7."
+    - "Данные пользователя должны сохраняться между сессиями"
+    - "Сайт должен иметь понятный и интуитивно понятный интерфейс."
+    
+   
+    requirements:
+  functional:
+    - "User must be able to search for products by keyword or category."
+    - "User must be able to filter products."
+    - "User must be able to view products and detailed product information."
+    - "User must be able to add products to the cart and view the cart contents."
+
+  non-functional:
+    - "The site must be designed for usability and optimized for speed."
+    - "The site must be secure and protect user data."
+    - "The site must have a mobile version."
+    - "The site must be tested for compatibility with the latest browser versions."
+    - "The site must be able to handle high traffic."
+    - "The site must be accessible on various devices."
+
+ implicit:
+    - "Links must work correctly."
+    - "The site must be available 24/7."
+    - "User data (e.g., cart) must persist between sessions."
+    - "The site must have a clear and intuitive interface."
