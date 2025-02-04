@@ -1,0 +1,172 @@
+---
+test_cases:
+  functional:
+    - summary: |
+        Verifying product search by keyword
+      requirement: |
+        When a keyword is entered into the search bar, relevant products should be displayed.
+      prerequisites: |
+        The homepage is open. The search bar is available for input.
+      test-data: |
+        Keyword = "Juice"
+      steps:
+        - Enter "Juice" into the search bar.
+        - Click on the "Search" button.
+      expected-result: |
+        Products related to the keyword "Juice" should be displayed on the page.
+
+    - summary: |
+        Verifying product search by category
+      requirement: |
+        When a category is selected from the homepage, products from that category should be displayed.
+      prerequisites: |
+        The homepage is open. Product categories are available for selection.
+      test-data: |
+        Category = "Beauty"
+      steps:
+        - Select the "Beauty" category.
+        - Review the displayed products.
+      expected-result: |
+        Only products from the "Beauty" category should be displayed on the page.
+
+    - summary: |
+        Verifying product filtering by price range
+      requirement: |
+        Products should be filtered according to the selected price range.
+      prerequisites: |
+        The page with products is open. Filtering function is available.
+      test-data: |
+        Price range = $10 - $1000
+      steps:
+        - Choose the price range filter.
+        - Set the range from $10 to $10000.
+        - Click on the "Apply Filter" button.
+      expected-result: |
+        Only products priced within the range of $10 - $10000 should be displayed.
+
+    - summary: |
+        Verifying product detail display
+      requirement: |
+        When clicking on a product, detailed information about the product (price, description, features) should be displayed.
+      prerequisites: |
+        A product page is open. Product images and titles are available.
+      test-data: |
+        Product = "Kawasaki Z800"
+      steps:
+        - Click on the product "Kawasaki Z800".
+      expected-result: |
+        A product page with detailed description, price, images, and features should open.
+
+    - summary: |
+        Verifying adding product to the cart
+      requirement: |
+        When adding a product to the cart, it should appear in the cart.
+      prerequisites: |
+        The product page is open. The "Add to Cart" button is available.
+      test-data: |
+        Product = "Oppo F19 Pro Plus"
+      steps:
+        - Click on the "Add to Cart" button.
+      expected-result: |
+        The "Oppo F19 Pro Plus" product should be added to the cart, and the cart icon should update.
+
+  non_functional:
+    - summary: |
+        Verifying mobile responsiveness
+      requirement: |
+        The website should display correctly on mobile devices.
+      prerequisites: |
+        A mobile device with a browser (e.g., smartphone or tablet).
+      test-data: |
+        Mobile device = iPhone 12
+      steps:
+        - Open the website on the mobile device.
+        - Check the main page for correct display.
+      expected-result: |
+        The website should display correctly on the mobile device, with all elements accessible for interaction.
+
+    - summary: |
+        Verifying page load time
+      requirement: |
+        The page should load in less than 3 seconds.
+      prerequisites: |
+        The page is available in the test environment.
+      test-data: |
+        Network = standard internet connection
+      steps:
+        - Open the homepage.
+        - Measure the page load time.
+      expected-result: |
+        The page should load in less than 3 seconds.
+
+    - summary: |
+        Verifying SSL certificate security
+      requirement: |
+        The website should have a valid SSL certificate for secure connections.
+      prerequisites: |
+        The page is accessible for viewing.
+      test-data: |
+        URL = "https://hexlet-products-store.vercel.app"
+      steps:
+        - Open the website using "https".
+        - Check for the green lock symbol in the browser's address bar.
+      expected-result: |
+        The page should be secured with an SSL certificate, and the URL should start with "https".
+
+    - summary: |
+        Verifying browser compatibility
+      requirement: |
+        The website should display correctly in various browsers (Chrome, Firefox, Safari).
+      prerequisites: |
+        The page is accessible for viewing. Required browsers are installed.
+      test-data: |
+        Browsers = Chrome, Firefox, Safari
+      steps:
+        - Open the website in different browsers (Chrome, Firefox, Safari).
+        - Verify the correct display and functionality of elements.
+      expected-result: |
+        The website should display correctly and function properly in all the specified browsers.
+
+  usability:
+    - summary: |
+        Verifying ease of website navigation
+      requirement: |
+        The website navigation should be intuitive and easy for users.
+      prerequisites: |
+        The homepage is open.
+      test-data: |
+        Navigation = menu, links, buttons
+      steps:
+        - Open the site and navigate through the main menu.
+        - Check if all major sections are accessible.
+      expected-result: |
+        The user should be able to find necessary sections and products on the website without difficulty.
+
+    - summary: |
+        Verifying the relevance of search results
+      requirement: |
+        The search results should be relevant and match the entered query.
+      prerequisites: |
+        The homepage is open. The search bar is available.
+      test-data: |
+        Query = "mens-watches"
+      steps:
+        - Enter "mens-watches" into the search bar.
+        - Review the search results.
+      expected-result: |
+        The search results should only display relevant products related to the query "mens-watches".
+
+    - summary: |
+        Verifying language selection on the website
+      requirement: |
+        The user should be able to select a language on the website, and the content should display in the selected language.
+      prerequisites: |
+        The website is accessible. Multiple language options are supported.
+      test-data: |
+        Language = "English"
+      steps:
+        - Open the website in Russian.
+        - Select the "English" language via the language switcher.
+        - Verify that all content on the page displays in English.
+      expected-result: |
+        The page should display in English without any translation errors.
