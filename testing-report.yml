@@ -1,1 +1,52 @@
+---
+test_cases:
+  functional:
+    - summary: |
+        Проверка поиска товаров по ключевому слову
+      status: fail
+      
+    - summary: |
+        Проверка поиска товаров по категории
+      status: pass
 
+    - summary: |
+        Проверка фильтрации товаров по ценовому диапазону
+      status: pass
+
+    - summary: |
+        Проверка отображения подробной информации о товаре
+      status: pass
+
+    - summary: |
+        Проверка добавления товара в корзину
+      status: pass
+
+  non_functional:
+    - summary: |
+        Проверка адаптивности сайта для мобильных устройств
+      status: fail
+
+    - summary: |
+        Проверка времени загрузки страницы
+      status: pass
+
+    - summary: |
+        Проверка безопасности SSL сертификата
+      status: pass
+
+    - summary: |
+        Проверка совместимости с различными браузерами
+      status: pass
+
+  usability:
+    - summary: |
+        Проверка удобства навигации по сайту
+      status: fail
+
+    - summary: |
+        Проверка релевантности результатов поиска
+      status: pass
+
+    - summary: |
+        Проверка выбора языка на сайте
+      status: pass
