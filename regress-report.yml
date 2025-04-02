@@ -2,15 +2,15 @@
 test-cases:
   - summary: |
      Проверка поиска товаров по ключевому слову
-  status: fail
+    status: fail
       
   - summary: |
       Проверка адаптивности сайта для мобильных устройств
-  status: fail
+    status: fail
 
   - summary: |
       Проверка удобства навигации по сайту
-  status: fail
+    status: fail
   
 bugreports: 
   - summary: | 
