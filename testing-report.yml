@@ -45,4 +45,4 @@
 
 - summary: |
     Проверка выбора языка на сайте
-  status: pass
+  status: fail
